@@ -1,0 +1,32 @@
+{
+  "name": "ideaid-website-2014",
+  "version": "0.0.0",
+  "description": "2014 website for IDEAID",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IDEAIDCPH/website-2014.git"
+  },
+  "author": "Emil Bay <emil@ideaid.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IDEAIDCPH/website-2014/issues"
+  },
+  "devDependencies": {
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-sass": "~0.6.0",
+    "grunt-env": "~0.4.1",
+    "grunt-preprocess": "~4.0.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.2",
+    "grunt-contrib-imagemin": "~0.4.0",
+    "load-grunt-tasks": "~0.2.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-htmlmin": "~0.1.3"
+  }
+}
