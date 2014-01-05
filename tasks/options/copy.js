@@ -27,6 +27,15 @@ module.exports = {
         src:    '<%= files.css %>',
         dest:   '<%= dirs.dist.css %>'
     },
+    'wordpress-specific': {
+        expand: true,
+        cwd:    '<%= dirs.src.root %>',
+
+        src:    [
+            '<%= files.css %>' //The style.css file that defines the theme
+        ],
+        dest:   '<%= dirs.dist.root %>'
+    },
     webcal: {
         expand: true,
         cwd:    '<%= dirs.src.webcal %>',

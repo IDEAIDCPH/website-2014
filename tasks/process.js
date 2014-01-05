@@ -1,8 +1,17 @@
 module.exports = function(grunt) {
 	'use strict';
 
-    grunt.registerTask('process', ['process:html', 'process:img', 'process:js', 'process:sass', 'process:webcal']);
+    grunt.registerTask('process', [
+        'process:html', 
+        'process:img',
+        'process:js',
+        'process:sass',
+        'process:wordpress-specific',
+        'process:webcal'
+    ]);
 
+
+    
 	grunt.registerTask('process:html', [
         'preprocess:html',
         'copy:html'
@@ -21,6 +30,9 @@ module.exports = function(grunt) {
         'sass', 
         'preprocess:css', 
         'copy:css'
+    ]);
+    grunt.registerTask('process:wordpress-specific', [
+        'copy:wordpress-specific'
     ]);
     grunt.registerTask('process:webcal', [
         'copy:webcal'
