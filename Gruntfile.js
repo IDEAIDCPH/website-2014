@@ -29,7 +29,8 @@ module.exports = function(grunt) {
                 img: 'src/assets/img/',
                 js: 'src/assets/js/',
                 webcal: 'src/assets/webcal/',
-                misc: 'src/assets/misc/'
+                misc: 'src/assets/misc/',
+                data: 'src/data'
             },
             dist: {
                 root: 'dist/',
@@ -50,13 +51,14 @@ module.exports = function(grunt) {
         files: {
             any: '**/*',
 
-            html: '**/*.{htm,html}',
+            html: '**/*.{htm,html,php}',
             sass: '**/*.{sass,scss}',
             sassPartial: '**/_*.{sass,scss}',
             css: '**/*.css',
             js: '**/*.js',
             img: '**/*.{jpg,jpeg,png,ico,gif,svg}',
-            cal: '**/*.{ics,vcs}'
+            cal: '**/*.{ics,vcs}',
+            sql: '**/*.sql'
         }
     };
 
