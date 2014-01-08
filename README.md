@@ -21,6 +21,20 @@ Project Structure
 Development
 -----------
 
+To import wordpress data (SQL, uploads and plugins):
+	
+	grunt import
+
+
+To watch files during development:
+
+	grunt dev
+
+To make a clean build:
+
+	grunt build
+
+
 This project only contains the wordpress theme and data files. The project is intended to be built into the Wordpress themes directory. The easiest way is to symlink the `dist` folder into `wp-content/themes/` while developing.
 	
 	ln -s $PWD/dist /Applications/MAMP/htdocs/wp-content/themes/ideaid
