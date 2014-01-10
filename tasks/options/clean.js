@@ -5,5 +5,8 @@ module.exports = {
     ],
     tmp: [
         '<%= dirs.tmp.root %>'
+    ],
+    sassCache: [
+        '.sass-cache/**/*'
     ]
 };
