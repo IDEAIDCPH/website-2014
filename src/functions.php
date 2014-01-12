@@ -1,5 +1,7 @@
 <?php
 
+require_once('lib/WalkerMainNav.php');
+
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
 
