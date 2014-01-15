@@ -1,0 +1,20 @@
+$mobile-size:450px;
+
+// Bourbon Neat Breakpoints
+$mobile: new-breakpoint(max-width $mobile-size 1);
+
+@include media($mobile) {
+	.grid-wrapper {
+		padding: 0 30px;
+	}
+	.one-of-one 	{ @include span-columns(1); }
+	.one-of-two 	{ @include span-columns(1); }
+	.one-of-three 	{ @include span-columns(1); }
+	.one-of-six 	{ @include span-columns(1); }
+
+	.description 	{ @include span-columns(1); }
+	.media-list {
+		.media-content { @include span-columns(1); }
+		.media { @include span-columns(1); text-align: center !important; }
+	}
+}

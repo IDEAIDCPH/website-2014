@@ -1,0 +1,27 @@
+.media-list {
+	h1 { letter-spacing: 0.5px; }
+	p { font-weight: 300; }
+	.media-left, .media-right {
+		@include row();
+		margin: 0 0 80px 0;
+	}
+
+	.media-right .media-content {
+		@include shift(2);
+	}
+
+	.media-right .media {
+		text-align: right;
+	}
+
+	.media-left .media {
+		@include shift(2);
+	}
+
+	.media {
+		@include span-columns(3);
+	}
+	.media-content {
+		@include span-columns(5);
+	}
+}

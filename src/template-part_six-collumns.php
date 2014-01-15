@@ -11,22 +11,18 @@ $args = array(
 	'sort_column' => 'menu_order'
 );
 ?>
-
-<div class="six-cols" style="background:blue;">
+<section class="grid-wrapper">
 
 <?php
 // Get pages with arguments and
 // loop through them
-foreach(get_pages($args) as $subpage) : $post = $subpage; ?>
-
-	<div class="block" style="width:16.66666%;float:left;">
+foreach(get_pages($args) as $subpage) : 
+	$post = $subpage; ?>
+	<article class="one-of-six">
 		<?php the_post_thumbnail('six-cols'); ?>
-		<h4><?php echo $subpage->post_title; ?></h4>
+		<h1><?php echo $subpage->post_title; ?></h1>
 		<?php echo wpautop($subpage->post_content); ?>
-	</div>
-
+	</article>
 <?php endforeach; ?>
 
-<div style="clear:both; width:100%"></div>
-
-</div>
+</section>

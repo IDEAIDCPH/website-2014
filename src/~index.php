@@ -12,12 +12,11 @@ Include call to action here
 */
 ?>
 
-		<aside class="well center">
+		</section>
+		<section class="well center">
 			<h1>What are you waiting for?</h1>
 			<a href="" class="button">Apply now</a>
 			<p class="subtle">... not convinced? Please <a href="">tell us why</a>.</p>
-		</aside>
+		</section>
 	</main>
-	
 <?php get_footer('default'); ?>
-		

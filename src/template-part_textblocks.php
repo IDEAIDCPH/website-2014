@@ -12,20 +12,17 @@ $args = array(
 );
 ?>
 
-<div class="textblocks">
+<dl class="qu-list">
 
 <?php
 // Get pages with arguments and
 // loop through them
-foreach(get_pages($args) as $i => $subpage) : $float = ($i%2) == 0 ? 'left' : 'right'; ?>
+foreach(get_pages($args) as $i => $subpage): continue; ?>
 	
-	<div class="block">
-		<h3><?php echo $subpage->post_title; ?></h3>
-		<?php echo wpautop($subpage->post_content); ?>
-	</div>
+		<dt><?php echo $subpage->post_title; ?></dt>
+		<dd>
+			<?php echo wpautop($subpage->post_content); ?>
+		</dd>
 
 <?php endforeach; ?>
-
-<div style="clear:both; width:100%"></div>
-
-</div>
+</dl>

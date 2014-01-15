@@ -1,0 +1,19 @@
+.description {
+	@include span-columns(8);
+
+	min-height: 98px;
+	padding: 16px 0 18px 50px;
+	margin-left: -50px;
+
+	background: image-url('mark-large@2x.png') no-repeat left top;
+	background-size: 100px 98px;
+
+	font-weight: 600; //semi-bold
+	font-size: 22px;
+	letter-spacing: -0.5px;
+
+	margin: {
+		top: 60px;
+		bottom: 60px;
+	}
+}

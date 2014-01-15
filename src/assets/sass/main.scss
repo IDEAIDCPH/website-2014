@@ -1,0 +1,81 @@
+@import "config";
+@import "fonts";
+
+@import "utilities/normalize";
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "mixins/mixins";
+@import "components/components";
+@import "elements/elements";
+@import "mobile";
+
+html, body {
+	width: 100%;
+	min-height: 100%;
+	font-size: 15px;
+	@include font-smoothing(antialiased);
+}
+
+html {
+	padding-bottom: 20px;
+	background: $dark-well-color;
+}
+
+body {
+	background: #fff;
+}
+
+header {
+	width: 100%;
+
+	background: image-url('background.jpg') center 20%;
+	background-size: cover;
+
+	img.logo {
+		margin: 20px 0;
+		float: left;
+	}
+	
+	img.logo-medium {
+		margin: 80px 0 20px 0;
+		float: left;
+	}
+
+	nav {
+		float: right;
+		text-transform: uppercase;
+
+		a {
+			display: inline-block;
+			padding: 0 8px;
+
+			line-height: 80px;
+			color: #fff;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+main {}
+footer section {
+	padding: 60px 0;
+}
+
+
+section {
+	position: relative;
+	//background: image-url(); 
+	&.social-media {}
+}
+
+a {
+	color: $primary-green;
+}
+
+p {
+	margin-top: 0;
+}

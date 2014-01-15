@@ -1,0 +1,45 @@
+.well {
+	padding: 60px 0;
+	background-color: $dark-well-color;
+	color: $inverted-text-color;
+	
+	img {
+		display: block;
+		margin: 0 auto 50px auto;
+	}	
+
+	p {
+		margin-top: 18px;
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover, &:active {
+			text-decoration: underline;
+		}
+	}
+
+	&.sponsors {
+		background-color: $bright-well-color;
+		color: $subtle-text-color;
+
+		.inline-list li {
+			margin: 0 36px;
+		}
+	}
+}
+
+section.well {
+	h1 {
+		font-size: 22px;
+	}
+}
+
+aside.well {
+	h1 {
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 18px;
+	}
+}

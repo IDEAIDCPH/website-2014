@@ -1,0 +1,8 @@
+.social-buttons {
+	@include outer-container;
+	@include position(0 0 60px 0);
+
+	.fb-like {
+		margin-right: 18px;
+	}
+}

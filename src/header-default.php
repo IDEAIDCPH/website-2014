@@ -1,14 +1,21 @@
 <!doctype html>
-<html>
+<html <?php language_attributes(); ?>>
 	<head>
 		<meta charset=utf-8>
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
 	</head>
 
-	<body>
+	<body <?php body_class(); ?>>
 		<header>
 			<div class="grid-wrapper">
-				<a href="/"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-small@2x.png" alt="Ideaid" width=91 height=40></a>
+				<a href="/">
+					<img class="logo-medium" 
+						 src="<?php echo get_template_directory_uri(); ?>/img/logo-small@2x.png" 
+						 alt="Ideaid" 
+						 width=91 
+						 height=40>
+				</a>
 				
 				<?php 
 					wp_nav_menu( array(
@@ -24,7 +31,4 @@
 			</div>
 		</header>
 		<main>
-			<section class="grid-wrapper">
-				<h1 class="page-title"><?php the_title(); ?></h1>
-
-				<?php load_template( TEMPLATEPATH . '/' . get_default_template(), false ); ?>
+			<?php load_template( TEMPLATEPATH . '/' . get_default_template(), false ); ?>

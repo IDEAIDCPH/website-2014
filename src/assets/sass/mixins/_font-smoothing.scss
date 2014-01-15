@@ -1,0 +1,4 @@
+@mixin font-smoothing($alias) {
+	//  content-box | border-box | inherit
+  	@include prefixer(font-smoothing, $alias, webkit moz spec);
+}

@@ -1,6 +1,7 @@
 <?php
 
 require_once('lib/WalkerMainNav.php');
+require_once('application.php');
 
 add_theme_support('menus');
 add_theme_support('post-thumbnails');

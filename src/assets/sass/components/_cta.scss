@@ -1,0 +1,15 @@
+.cta {
+	color: $inverted-text-color;
+	padding-bottom: 140px;
+
+	p {
+		font-size: 22px;
+		font-weight: 300;
+		margin: 18px 0 24px 0;
+	}
+
+	.button {
+		margin-right: $gutter;
+		margin-bottom: $gutter;
+	}
+}
