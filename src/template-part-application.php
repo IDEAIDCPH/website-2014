@@ -71,7 +71,7 @@ Template Name: Part - Application
 
 
 <section class="grid-wrapper page-application">
-	<form action="/wp-admin/admin-ajax.php" method="post" no-validate>
+	<form action="/wp-admin/admin-ajax.php" class="application-form" method="post" no-validate>
 		<input type="hidden" name="action" value="do_ajax" />
 		<input type="hidden" name="fn" value="submit_application" />
 

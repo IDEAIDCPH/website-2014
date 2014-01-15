@@ -1,75 +1,37 @@
 /// Needs a thougher clean up
 
-.page-application {
-	margin-bottom: 60px;
-	input, label, textarea {
-		border: 0;
-		background: $bright-well-color;
-		font-size: 14px;
-		display: inline-block;
+input, textarea, %input {
+	margin: 15px;
+	padding: 13px 28px 13px 12px;
+	display: inline-block;
+	
+	border: 0;
+	background: $bright-well-color;
+	
+	font-size: 14px;
+	line-height: 1;
+
+	@include placeholder {
+		color: lighten($text-color, 50);	
 	}
 
-	input, textarea {
-		padding: 0;
-		margin: 0;
+	&:focus { outline: none; }
 
-		//border-radius: 0 4px 4px 0;
+	&.short { width: 110px; }
+	&.long { width: 210px; }
+}
 
-		font-size: 14px;
-		
-		&:focus {
-			outline: none;
-		}
+input[disabled], textarea[disabled] {
+	opacity: 0.7;
+}
 
-		@each $type in text, email, url, tel {
-			&[type=#{$type}] {
-				//@extend .icon-#{$type};
-			}
-		}
+input[type=submit] {
+	@extend .button;
+	padding: 13px 12px;
+	line-height: 1;
+}
 
-		&[type=checkbox] {
-			width: auto;
-		}
-
-		&[type=submit] {
-			@extend .button;
-			padding: 13px 12px;
-			border-radius: 4px;
-			line-height: 1;
-
-			&[disabled] {
-				opacity: 0.7;
-			}
-		}
-	}
-
-	input.short {
-		width: 140px;
-	}
-
-	input.long {
-		width: 240px;
-	}
-
-	label {
-		margin: 0 30px 30px 0;
-		padding: 13px 12px;
-
-		border-radius: 4px;
-	}
-
-	label i.icon {
-		border-radius: 4px 0 0 4px;
-		display: inline-block;
-		width: 30px;
-		min-height: 100%;
-		background: #21202e;
-
-		display:none; //debug
-	}
-
-	.error {
-		color: #9a201f;
-		border: 1px solid #9a201f; //Until :before is implemented
-	}
+.error {
+	color: #9a201f;
+	box-shadow: 0 0 0 1px #9a201f;
 }
