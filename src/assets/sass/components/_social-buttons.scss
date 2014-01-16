@@ -1,6 +1,8 @@
+//Inline like and tweet button
+
 .social-buttons {
 	@include outer-container;
-	@include position(0 0 60px 0);
+	@include position(0 0 60px $outer-gutter);
 
 	.fb-like {
 		margin-right: 18px;
