@@ -3,7 +3,7 @@
 	background-color: $dark-well-color;
 	color: $inverted-text-color;
 	
-	img {
+	.one-of-three img {
 		display: block;
 		margin: 0 auto 50px auto;
 	}	
@@ -12,17 +12,13 @@
 		margin-top: 18px;
 	}
 
-	a {
-		text-decoration: none;
-
-		&:hover, &:active {
-			text-decoration: underline;
-		}
-	}
-
 	&.sponsors {
 		background-color: $bright-well-color;
 		color: $subtle-text-color;
+
+		a {
+			color: $secondary-green;
+		}
 
 		.inline-list li {
 			margin: 0 36px;
