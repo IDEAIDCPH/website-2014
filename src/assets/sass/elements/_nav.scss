@@ -1,0 +1,30 @@
+nav {
+	width: 100%;
+
+	a {
+		text-transform: uppercase;
+
+		display: inline-block;
+		padding: 0 8px;
+
+		line-height: 80px;
+		color: #fff;
+	}
+
+	.nav-menu {
+		@include span-columns(9);
+		text-align: right;
+	}
+
+	.logo {
+		@include span-columns(3);
+		padding: 20px 0;
+		line-height: 1;
+	}
+
+	.logo-medium {
+		@include span-columns(3);
+		padding: 80px 0 20px 0;
+		line-height: 1;
+	}
+}

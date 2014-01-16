@@ -1,0 +1,7 @@
+nav.sticky {
+	@include position(fixed, 0px 0 0 0);
+	z-index: 1;
+
+	background: image-url('background.jpg') center 20%;
+	background-size: cover;
+}
