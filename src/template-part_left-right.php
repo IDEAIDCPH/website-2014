@@ -12,33 +12,16 @@ $args = array(
 );
 ?>
 <section class="media-list grid-wrapper">
-<?php
-// Get pages with arguments and
-// loop through them
-foreach(get_pages($args) as $i => $subpage):
-	$post = $subpage; 
-	$class = ($i % 2 ? 'media-right' : 'media-left');
-?>
-	<article class="<?php echo $class; ?>">
-	<?php if($i % 2): ?>
-		<div class="media-content">
-			<h1><?php the_title(); ?></h1>
-			<hr class="short">
-			<p><?php echo wpautop($subpage->post_content); ?></p>
-		</div>
-		<div class="media">
-			<?php the_post_thumbnail('left-right'); ?>
-		</div>
-	<?php else: ?>
+<?php foreach(get_pages($args) as $i => $post): ?>
+	<article class="media-item media-<?php echo ($i % 2 ? 'right' : 'left'); ?>">
 		<div class="media">
 			<?php the_post_thumbnail('left-right'); ?>
 		</div>
 		<div class="media-content">
 			<h1><?php the_title(); ?></h1>
 			<hr class="short">
-			<p><?php echo wpautop($subpage->post_content); ?></p>
+			<p><?php echo wpautop($post->post_content); ?></p>
 		</div>
-	<?php endif; ?>
 	</article>
 <?php endforeach; ?>
 </section>

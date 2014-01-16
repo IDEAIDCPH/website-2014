@@ -1,27 +1,29 @@
 .media-list {
 	h1 { letter-spacing: 0.5px; }
 	p { font-weight: 300; }
-	.media-left, .media-right {
-		@include row();
-		margin: 0 0 80px 0;
-	}
 
-	.media-right .media-content {
+	.media-item {
+		@include span-columns(8);
 		@include shift(2);
+		margin-bottom: 80px;
+		clear: both;
 	}
 
 	.media-right .media {
+		float: right;
 		text-align: right;
 	}
 
 	.media-left .media {
-		@include shift(2);
+		float: left;
 	}
 
 	.media {
-		@include span-columns(3);
+		width: 40%;
+		display: inline-block;
 	}
 	.media-content {
-		@include span-columns(5);
+		width: 60%;
+		display: inline-block;
 	}
 }
