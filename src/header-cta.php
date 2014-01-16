@@ -8,27 +8,28 @@
 
 	<body <?php body_class(); ?>>
 		<header>
-			<div class="grid-wrapper">
-				<a href="/">
-					<img class="logo-medium" 
-						 src="<?php echo get_template_directory_uri(); ?>/img/logo-medium@2x.png" 
-						 alt="Ideaid" 
-						 width=170 
-						 height=75>
-				</a>
-				
-				<?php 
-					/*wp_nav_menu( array(
-				        'menu'              => 'primary',
-				        'theme_location'    => 'primary',
-				        'depth'             => 1,
-				        'container'         => 'nav',
-		                'menu_class'        => 'inline-list',
-				        'fallback_cb'       => 'Walker_Main_Nav::fallback',
-				        'walker'            => new Walker_Main_Nav())
-				    );*/
-				?>
-			</div>
+			<nav>
+				<div class="grid-wrapper">
+					<a href="/" class="logo-medium" >
+						<img src="<?php echo get_template_directory_uri(); ?>/img/logo-medium@2x.png"
+							 alt="Ideaid"
+							 width=170
+							 height=75>
+					</a>
+
+					<?php
+						wp_nav_menu( array(
+					        'menu'              => 'primary',
+					        'theme_location'    => 'primary',
+					        'depth'             => 1,
+					        'container_class'   => 'nav-menu',
+						    'menu_class'        => 'inline-list',
+					        'fallback_cb'       => 'Walker_Main_Nav::fallback',
+					        'walker'            => new Walker_Main_Nav())
+					    );
+					?>
+				</div>
+			</nav>
 			<div class="grid-wrapper cta">
 				<div class="one-of-two">&nbsp;</div>
 				<div class="one-of-two">

@@ -7,28 +7,27 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<header>
+		<nav class="sticky">
 			<div class="grid-wrapper">
-				<a href="/">
-					<img class="logo-medium" 
-						 src="<?php echo get_template_directory_uri(); ?>/img/logo-small@2x.png" 
-						 alt="Ideaid" 
-						 width=91 
+				<a href="/" class="logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/logo-small@2x.png"
+						 alt="Ideaid"
+						 width=91
 						 height=40>
 				</a>
-				
-				<?php 
+
+				<?php
 					wp_nav_menu( array(
 				        'menu'              => 'primary',
 				        'theme_location'    => 'primary',
 				        'depth'             => 1,
-				        'container'         => 'nav',
+				        'container_class'   => 'nav-menu',
 		                'menu_class'        => 'inline-list',
 				        'fallback_cb'       => 'Walker_Main_Nav::fallback',
 				        'walker'            => new Walker_Main_Nav())
 				    );
 				?>
 			</div>
-		</header>
+		</nav>
 		<main>
 			<?php load_template( TEMPLATEPATH . '/' . get_default_template(), false ); ?>
