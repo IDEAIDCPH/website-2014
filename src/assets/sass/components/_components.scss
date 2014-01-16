@@ -17,7 +17,16 @@
 
 	a {
 		color: inherit;
+		text-decoration: underline;
+
+		&:hover, &:active, &:focus {
+			color: lighten($subtle-text-color, 15%);
+		}
 	}
+}
+
+.dont-break {
+	white-space: nowrap;
 }
 
 .center {
