@@ -1,12 +1,14 @@
 $max-width: 1170px;
 $gutter: 30px;
+$outer-gutter: 30px;
 
 .grid-wrapper {
 	@include outer-container;
+	padding: 0 $outer-gutter;
 }
 
 .row 			{ @include row; }
 .one-of-one 	{ @include span-columns(12); @include omega(  ); }
 .one-of-two 	{ @include span-columns( 6); @include omega(2n); }
-.one-of-three 	{ @include span-columns( 4); @include omega(3n); }
+.one-of-three 	{ @include span-columns( 4); @include omega(3n); margin-bottom: 30px;}
 .one-of-six 	{ @include span-columns( 2); @include omega(6n); }
