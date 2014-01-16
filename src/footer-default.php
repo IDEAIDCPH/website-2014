@@ -10,10 +10,10 @@
 				</ul>
 			</aside>-->
 			<section class="social-media center">
-				<a href="http://fb.com/ideaidcph" class="icon" title="IDEAID on Facebook">
+				<a href="http://fb.com/ideaidcph" class="icon" title="IDEAID on Facebook" style="text-decoration: none;">
                 	<img src="<?php echo get_template_directory_uri() ?>/img/facebook-icon@2x.png" alt="IDEAID on Facebook" width="32" height="32">
 	            </a>
-	            <a href="http://twitter.com/ideaidcph" class="icon" title="IDEAID on Twitter">
+	            <a href="http://twitter.com/ideaidcph" class="icon" title="IDEAID on Twitter" style="text-decoration: none;">
 	                <img src="<?php echo get_template_directory_uri() ?>/img/twitter-icon@2x.png" alt="IDEAID on Twitter" width="32" height="32">
 	            </a>
 	            <p>
@@ -22,7 +22,7 @@
 			</section>
 		</footer>
 
-	
+
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
