@@ -12,6 +12,10 @@
 	text-decoration: none;
 	font-weight: 600;
 	text-transform: uppercase;
+	
+	&:hover, &:active, &:focus {
+		text-decoration: underline;
+	}
 
 	&.compact {
 		padding: 0 8px;
@@ -26,7 +30,6 @@
 	&.see-through {
 		color: #fff;
 		background: none;
-		//border: 1px solid #fff;
 		box-shadow: 0 0 0 1px #fff inset;
 	}
 }
