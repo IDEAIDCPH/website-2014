@@ -20,6 +20,13 @@ module.exports = {
         src:   '<%= files.js %>',
         dest:  '<%= dirs.dist.js %>'
     },
+    fonts: {
+        expand: true,
+        cwd:   '<%= dirs.src.fonts %>',
+
+        src:   '<%= files.fonts %>',
+        dest:  '<%= dirs.dist.fonts %>'
+    },
     css: {
         expand: true,
         cwd:    '<%= dirs.tmp.css %>',

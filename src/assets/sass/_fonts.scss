@@ -4,3 +4,7 @@
 //				   $asset-pipeline: true);
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700);
+
+@include font-face('Icons',
+				   'icons',
+				   $asset-pipeline: true);

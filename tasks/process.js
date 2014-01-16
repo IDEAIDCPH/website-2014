@@ -5,6 +5,7 @@ module.exports = function(grunt) {
         'process:html', 
         'process:img',
         'process:js',
+        'process:fonts',
         'process:sass',
         'process:wordpress-specific',
         'process:webcal'
@@ -25,6 +26,9 @@ module.exports = function(grunt) {
         'concat', 
         'uglify', 
         'copy:js'
+    ]);
+    grunt.registerTask('process:fonts', [
+        'copy:fonts'
     ]);
 	grunt.registerTask('process:sass', [
         'sass', 

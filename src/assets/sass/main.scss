@@ -1,11 +1,11 @@
 @import "config";
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "mixins/mixins";
 @import "fonts";
 
 @import "utilities/normalize";
 
-@import "bourbon/bourbon";
-@import "neat/neat";
-@import "mixins/mixins";
 @import "components/components";
 @import "elements/elements";
 @import "mobile";
