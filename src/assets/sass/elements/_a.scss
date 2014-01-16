@@ -1,0 +1,17 @@
+a {
+	color: $primary-green;
+	text-decoration: none;
+
+	&:hover, &:focus, &:active {
+		text-decoration: underline;
+	}
+}
+
+a.twitter {
+	@extend .icon;
+	@extend .icon-twitter;
+	&:before {
+		padding-right: 4px;
+		color: #f2f2f2;
+	}
+}
