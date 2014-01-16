@@ -28,52 +28,38 @@ body {
 
 header {
 	width: 100%;
+	z-index: 2;
 
 	background: image-url('background.jpg') center 20%;
 	background-size: cover;
-
-	img.logo {
-		margin: 20px 0;
-		float: left;
-	}
-	
-	img.logo-medium {
-		margin: 80px 0 20px 0;
-		float: left;
-	}
-
-	nav {
-		float: right;
-		text-transform: uppercase;
-
-		a {
-			display: inline-block;
-			padding: 0 8px;
-
-			line-height: 80px;
-			color: #fff;
-			text-decoration: none;
-
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-	}
 }
-main {}
-footer section {
-	padding: 60px 0;
+
+nav.sticky + main {
+	margin-top: 80px;
+}
+
+nav.sticky + main > section.well {
+	margin-top: 140px;
+}
+
+footer {
+	a {
+		text-decoration: underline;
+	}
+	section {
+		padding: 60px 0;
+	}
 }
 
 
 section {
 	position: relative;
 	//background: image-url(); 
-	&.social-media {}
-}
-
-a {
-	color: $primary-green;
+	&.social-media {
+		a img {
+			margin: 0 8px 23px 16px;
+		}
+	}
 }
 
 p {
