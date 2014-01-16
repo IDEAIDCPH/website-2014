@@ -1,11 +1,25 @@
+$icons: (\e800, icon-tick),
+		(\e801, icon-linkedin),
+		(\e802, icon-globe),
+		(\e803, icon-user),
+		(\e804, icon-phone),
+		(\e805, icon-mail),
+		(\e806, icon-edit),
+		(\e807, icon-twitter);
+
 .icon {
-	display: inline-block;
-	margin: 0 8px 20px 8px;
+	font-family: "Icons";
+	font-style: normal;
+	&:before {
+	  display: inline-block;
+	}
 }
 
-.icon-inline {
+@each $icon in $icons {
+	$code: nth($icon, 1);
+	$name: nth($icon, 2);
 
-	.twitter {
-
-	}
+	.#{$name}:before {
+		content: "#{$code}";
+	} 
 }
