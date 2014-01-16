@@ -18,4 +18,21 @@ function get_default_template () {
 	return "template-part_description.php";
 }
 
+function get_sponsors () {
+	global $post;
+
+	$thispage = $post;
+
+	$result = new WP_Query('pagename=sponsor-list');
+
+	$lookup = array(
+		'post_parent' => $result->post->ID,
+		'post_type'   => 'page',
+		'order' => 'ASC',
+		'orderby' => 'menu_order'
+	);
+
+	return get_children($lookup);
+}
+
 ?>

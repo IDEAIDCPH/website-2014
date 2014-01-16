@@ -1,14 +1,14 @@
 		<footer>
-			<!--<section class="sponsors well center">
+			<!--<aside class="sponsors well center">
 				<h1>Thanks to our sponsors</h1>
 				<ul class="inline-list js-slide">
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
-					<li><img src="" alt=""></li>
+					<?php foreach(get_sponsors() as $k => $post): setup_postdata($post);?>
+					<?php if(has_post_thumbnail()): ?>
+					<li><?php the_post_thumbnail('six-cols'); ?></li>
+					<?php endif; ?>
+					<?php endforeach; ?>
 				</ul>
-			</section>-->
+			</aside>-->
 			<section class="social-media center">
 				<a href="http://fb.com/ideaidcph" class="icon" title="IDEAID on Facebook">
                 	<img src="<?php echo get_template_directory_uri() ?>/img/facebook-icon@2x.png" alt="IDEAID on Facebook" width="32" height="32">
