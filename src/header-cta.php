@@ -8,7 +8,7 @@
 
 	<body <?php body_class(); ?>>
 		<header>
-			<nav>
+			<nav class="dropdown">
 				<div class="grid-wrapper">
 					<a href="/" class="logo-medium" >
 						<img src="<?php echo get_template_directory_uri(); ?>/img/logo-medium@2x.png"
@@ -21,7 +21,7 @@
 						wp_nav_menu( array(
 					        'menu'              => 'primary',
 					        'theme_location'    => 'primary',
-					        'depth'             => 1,
+					        'depth'             => 2,
 					        'container_class'   => 'nav-menu',
 						    'menu_class'        => 'inline-list',
 					        'fallback_cb'       => 'Walker_Main_Nav::fallback',
