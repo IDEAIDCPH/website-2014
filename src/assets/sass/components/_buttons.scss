@@ -1,7 +1,7 @@
 .button {
 	padding: 0 40px; //see line-height
 	display: inline-block;
-	
+
 	background-color: $primary-green;
 	border-radius: 10px;
 
@@ -12,7 +12,7 @@
 	text-decoration: none;
 	font-weight: 600;
 	text-transform: uppercase;
-	
+
 	&:hover, &:active, &:focus {
 		text-decoration: underline;
 	}
