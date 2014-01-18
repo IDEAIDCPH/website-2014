@@ -7,7 +7,6 @@
 
 	label {
 		@extend %input;
-		padding-left: 30px + 12px !important;
 		border-radius: 4px;
 		position: relative;
 
@@ -56,11 +55,12 @@
 
 	input:not([type=submit]), textarea {
 		padding: 0;
-		margin: 0;
+		margin: 0 0 0 30px;
 	}
 
 	input[type=checkbox] {
-		display: none;
+		//display: none;
+		margin: 0 12px 0 0;
 	}
 
 	.error {
