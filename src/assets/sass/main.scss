@@ -34,13 +34,16 @@ header {
 	background-size: cover;
 }
 
-nav.sticky + main {
-	margin-top: 80px;
+.page-template-default, .page-template {
+	main {
+		margin-top: 80px;
+
+		> .well:first-child {
+			margin-top: 140px;
+		}
+	}
 }
 
-nav.sticky + main > section.well {
-	margin-top: 140px;
-}
 
 footer {
 	a {
