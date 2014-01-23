@@ -22,8 +22,9 @@ html {
 	background: $dark-well-color;
 }
 
-body {
+body, main {
 	background: #fff;
+	@include clearfix();
 }
 
 header {
@@ -32,15 +33,25 @@ header {
 
 	background: image-url('background.jpg') center 20%;
 	background-size: cover;
+
+	//Bad hack, but since the header is position: fixed in all
+	//pages except the frontpage, this will override the styles just below
+	margin-bottom: -60px;
 }
 
-nav.sticky + main {
-	margin-top: 80px;
+.page-template-default, .page-template {
+	main {
+		//Add margin so content wont be hidden under the
+		//fixed menu
+		margin-top: 140px;
+
+		> .grid-wrapper:first-child > p:first-child {
+			//Give wells some white space to seperate them from the menu
+			margin-top: 0;
+		}
+	}
 }
 
-nav.sticky + main > section.well {
-	margin-top: 140px;
-}
 
 footer {
 	a {
@@ -54,7 +65,7 @@ footer {
 
 section {
 	position: relative;
-	//background: image-url(); 
+	//background: image-url();
 	&.social-media {
 		a img {
 			margin: 0 10px 25px 10px;
@@ -63,5 +74,10 @@ section {
 }
 
 p {
+	margin-top: 0;
+}
+
+
+p.subheader {
 	margin-top: 0;
 }
