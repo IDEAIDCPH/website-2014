@@ -1,13 +1,24 @@
 .dropdown {
-	ul {
-		list-style: none;
-	}
+	ul { list-style: none; }
 
-	li.menu-item-has-children {
+	.menu-item-has-children {
 		@include position(0px 0px 0 0);
-		a {
-			z-index: 10;
+
+		//span is the text of a "parent" page
+		span {
+			//Approximate copy of `_nav.scss` `nav a` rule
+			display: inline-block;
+			padding: 0 10px;
+
+			text-transform: uppercase;
+
+			line-height: 40px;
+			color: #fff;
+		}
+
+		a, span {
 			position: relative;
+			z-index: 10;
 		}
 
 		.empty-menu-element {
@@ -15,47 +26,46 @@
 		}
 
 		hr {
-			display: none;
+			display: inline-block;
 			width: 60%; height: 1px;
 			margin: 0 0 6px 0;
 
 			border: 0;
 			background: #e5e5e6;
-		}
-	}
-
-	li ul {
-		@include box-sizing(content-box);
-		width: 100%;
-		padding: 40px 8px 10px 0;
-		display: none;
-		@include position(absolute, 0px 0px 0 0);
-
-		border-radius: 10px;
-		z-index: 1;
-		background-color: #fafafa;
-		color: inherit;
-		font-size: 12px;
-	}
-
-	li.menu-item-has-children:hover {
-		a {
-			color: $text-color;
-		}
-	}
-
-	li:hover ul {
-		display: block;
-		li hr {
-			display: inline-block;
 			text-align: right;
 		}
 
-		li a {
+		ul {
+			@include box-sizing(content-box);
+			@include position(absolute, 0px 0px 0 0);
+			z-index: 1;
+
+			display: none;
+
 			width: 100%;
-			text-align: right;
-			line-height: 1.4;
-			padding: 4px;
+			padding: 40px 8px 10px 0;
+
+
+			background-color: #fafafa;
+			border-radius: 10px;
+
+			color: inherit;
+			font-size: 12px;
+
+			a {
+				width: 100%;
+				padding: 4px;
+
+				color: $text-color;
+
+				line-height: 1.4;
+				text-align: right;
+			}
+		}
+
+		&:hover {
+			span { color: $text-color; }
+			ul { display: block; }
 		}
 	}
 }
