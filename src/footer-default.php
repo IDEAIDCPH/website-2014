@@ -11,10 +11,10 @@
 			</aside>-->
 			<section class="social-media center">
 				<a href="http://fb.com/ideaidcph" class="icon" title="IDEAID on Facebook" style="text-decoration: none;">
-                	<img src="<?php echo get_template_directory_uri() ?>/img/facebook-icon@2x.png" alt="IDEAID on Facebook" width="32" height="32">
+                	<img src="<?php echo get_template_directory_uri() ?>/img/facebook-icon@2x.png" alt="IDEAID on Facebook" width="48" height="48">
 	            </a>
 	            <a href="http://twitter.com/ideaidcph" class="icon" title="IDEAID on Twitter" style="text-decoration: none;">
-	                <img src="<?php echo get_template_directory_uri() ?>/img/twitter-icon@2x.png" alt="IDEAID on Twitter" width="32" height="32">
+	                <img src="<?php echo get_template_directory_uri() ?>/img/twitter-icon@2x.png" alt="IDEAID on Twitter" width="48" height="48">
 	            </a>
 	            <p>
 	            	<a href="mailto:info@ideaid.org">Contact us</a> for more information.
