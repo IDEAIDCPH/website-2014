@@ -7,6 +7,7 @@ add_theme_support('menus');
 add_theme_support('post-thumbnails');
 
 register_nav_menu('primary', __('Primary Menu', 'IDEAID\'14') );
+register_nav_menu('dev', __('Development Menu', 'IDEAID\'14') );
 
 add_filter('show_admin_bar', '__return_false');
 
