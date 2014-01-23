@@ -13,6 +13,13 @@ module.exports = {
         src:   '<%= files.img %>',
         dest:  '<%= dirs.dist.img %>'
     },
+    ico: {
+        expand: true,
+        cwd:   '<%= dirs.src.img %>',
+
+        src:   '**/*.ico',
+        dest:  '<%= dirs.dist.img %>'
+    },
     js: {
         expand: true,
         cwd:   '<%= dirs.tmp.js %>',

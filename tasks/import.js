@@ -1,3 +1,5 @@
 module.exports = function(grunt) {
-    grunt.registerTask('import', []);
+    grunt.registerTask('import', function() {
+        
+    });
 }
