@@ -44,7 +44,10 @@
 				</div>
 			</nav>
 			<div class="grid-wrapper cta">
-				<div class="one-of-two" style="float:none; margin: 0 auto;">
+				<div class="one-of-two">
+					<iframe width="100%" height="318" src="//www.youtube.com/embed/3ye_W7ZsRYM" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="one-of-two">
 					<h1>Donate your brain</h1>
 					<p><!--... and compete to win the grand prize.--> We’re looking for the most innovative minds within programming, design and concept development to help make the world a better place. <br>
 					The event will take place in Copenhagen between February 28<sup>th</sup> - March 2<sup>nd</sup>.
