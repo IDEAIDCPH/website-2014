@@ -34,8 +34,8 @@ header {
 	background: image-url('background.jpg') center 20%;
 	background-size: cover;
 
-	//Bad hack, but since the header is position: fixed in all
-	//pages except the frontpage, this will override the styles just below
+	//Bad hack, but since the frontpage is the only pae with a header
+	//this will fix the problem with added margin to the first section
 	margin-bottom: -60px;
 }
 
