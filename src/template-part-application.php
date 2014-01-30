@@ -5,8 +5,9 @@ Template Name: Part - Application
 ?>
 
 <!-- REMOVE LATER -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
+	var changedFlag = {};
+	var hadFocusFlag = {};
 	$(function(){
 		$('[type=checkbox]').on('change', function(e) {
 			var $elm = $(e.target),
@@ -15,6 +16,25 @@ Template Name: Part - Application
 			if($elm.is(':checked')) $label.addClass('checked');
 			else					$label.removeClass('checked');
 		});
+
+		$('input')
+			.on('focus', function(e) {
+				var name = $(e.target).attr('name');
+
+				if(!hadFocusFlag[name]) {
+					hadFocusFlag[name] = true;
+					ga('send', 'event', 'application', name + ' had focus', 'unspecified platform');
+				}
+			})
+			.on('change', function(e) {
+				var name = $(e.target).attr('name');
+
+				if(!changedFlag[name]) {
+					changedFlag[name] = true;
+					ga('send', 'event', 'application', name + ' had changed', 'unspecified platform');
+				}
+
+			});
 
 		$('input:not([type=submit]), textarea')
 		  .on('focus', function(e) {
