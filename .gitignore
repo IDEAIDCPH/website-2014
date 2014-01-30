@@ -1,5 +1,6 @@
 dist
 publish
+tmp
 
 lib-cov
 *.seed
