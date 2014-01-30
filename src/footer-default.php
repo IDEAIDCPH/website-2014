@@ -24,6 +24,7 @@
 
 
 		<div id="fb-root"></div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
 		  if (d.getElementById(id)) return;
@@ -43,5 +44,6 @@
 		  ga('send', 'pageview');
 
 		</script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/main.min.js"></script>
 	</body>
 </html>
