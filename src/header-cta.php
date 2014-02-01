@@ -52,7 +52,7 @@
 					<p><!--... and compete to win the grand prize.--> We’re looking for the most innovative minds within programming, design and concept development to help make the world a better place. <br>
 					The event will take place in Copenhagen between February 28<sup>th</sup> - March 2<sup>nd</sup>.
 </p>
-					<a href="#" onclick="scrollReadMore" class="button see-through">Read more</a>
+					<a href="#" class="button see-through js-scroll-description">Read more</a>
 					<a href="/apply-now" class="button">Apply now</a>
 				</div>
 			</div>
