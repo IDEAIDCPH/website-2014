@@ -3,7 +3,11 @@ module.exports = {
         separator: ';',
     },
     dist: {
-        src: ['<%= dirs.src.js + "main.js" %>'],
+        src: [
+            '<%= dirs.src.jsVendor + files.js %>',
+            '<%= dirs.src.jsLibs + files.js %>',
+            '<%= dirs.src.js + "main.js" %>'
+        ],
         dest: '<%= dirs.tmp.js + "main.min.js" %>',
     }
 };

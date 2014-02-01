@@ -1,0 +1,31 @@
+.video-player {
+	position: relative;
+	display: block;
+	height: 300px;
+	cursor: pointer;
+	background: image-url('player-icon.png') no-repeat center center;
+
+	&:before {
+		@include size(82px);
+		@include transition;
+
+		position: absolute;
+		top: calc(50% - 41px);
+		left: calc(50% - 41px);
+
+		display: block;
+		content: '';
+
+		border-radius: 100%;
+	}
+
+	&:hover:before {
+
+		background: rgba(#fff, 0.1);
+	}
+
+	iframe {
+		opacity: 0;
+		display: none;
+	}
+}

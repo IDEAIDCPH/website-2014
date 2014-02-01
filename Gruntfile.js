@@ -28,6 +28,8 @@ module.exports = function(grunt) {
 
                 img: 'src/assets/img/',
                 js: 'src/assets/js/',
+                jsVendor: 'src/assets/js/vendor/',
+                jsLibs: 'src/assets/js/libs/',
                 fonts: 'src/assets/fonts/',
                 webcal: 'src/assets/webcal/',
                 misc: 'src/assets/misc/',
