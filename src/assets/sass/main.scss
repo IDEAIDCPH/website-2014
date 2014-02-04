@@ -32,25 +32,22 @@ header {
 
 	background: image-url('background.jpg') center 20%;
 	background-size: cover;
-
-	//Bad hack, but since the frontpage is the only pae with a header
-	//this will fix the problem with added margin to the first section
-	margin-bottom: -60px;
 }
 
-.page-template-default, .page-template {
-	main {
-		//Add margin so content wont be hidden under the
-		//fixed menu
-		margin-top: 140px;
+main {
+	//Add margin to make up for fixed menu
+	margin-top: 140px;
 
-		> .grid-wrapper:first-child > p:first-child {
-			//Give wells some white space to seperate them from the menu
-			margin-top: 0;
-		}
+	//hacky remove margin on descriptions
+	> .grid-wrapper:first-child > p:first-child {
+		margin-top: 0;
 	}
 }
 
+.home header + main {
+	//Override margin on frontpage
+	margin-top: 60px;
+}
 
 footer {
 	a {
@@ -64,7 +61,7 @@ footer {
 
 section {
 	position: relative;
-	//background: image-url();
+
 	&.social-media {
 		a img {
 			margin: 0 10px 25px 10px;
