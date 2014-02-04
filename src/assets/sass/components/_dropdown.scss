@@ -1,5 +1,6 @@
 .dropdown {
 	ul { list-style: none; }
+	.menu-toggle { display: none; }
 
 	.menu-item-has-children {
 		@include position(0px 0px 0 0);

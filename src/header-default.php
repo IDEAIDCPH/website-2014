@@ -28,18 +28,20 @@
 						 width=91
 						 height=40>
 				</a>
-
-				<?php
-					wp_nav_menu( array(
-				        'menu'              => 'launch-menu',
-				        'theme_location'    => 'dev',
-				        'depth'             => 2,
-				        'container_class'   => 'nav-menu',
-		                'menu_class'        => 'inline-list',
-				        'fallback_cb'       => 'Walker_Main_Nav::fallback',
-				        'walker'            => new Walker_Main_Nav())
-				    );
-				?>
+				<a class="menu-toggle">Open menu</a>
+				<div class="menu-collapse">
+					<?php
+						wp_nav_menu( array(
+					        'menu'              => 'launch-menu',
+					        'theme_location'    => 'dev',
+					        'depth'             => 2,
+					        'container_class'   => 'nav-menu',
+			                'menu_class'        => 'inline-list',
+					        'fallback_cb'       => 'Walker_Main_Nav::fallback',
+					        'walker'            => new Walker_Main_Nav())
+					    );
+					?>
+				</div>
 			</div>
 		</nav>
 		<main>

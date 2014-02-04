@@ -16,5 +16,131 @@ $mobile: new-breakpoint(max-width $mobile-size 1);
 	.media-list {
 		.media-content { @include span-columns(1); }
 		.media { @include span-columns(1); text-align: center !important; }
+	nav.dropdown {
+		box-shadow: 0 0 2px $dark-well-color;
+		position: relative;
+		top: auto;
+		left: auto;
+		height: 60px;
+		background: #fafafa;
+		padding-left: 20px;
+		padding-right: 20px;
+
+		&, .grid-wrapper {
+			padding: 0;
+		}
+
+		.logo, .logo-medium {
+			padding:15px;
+			float:none;
+			display: inline-block;
+			text-align: left;
+			width: 40%;
+
+			img {
+				height: 30px;
+				width: auto;
+			}
+		}
+
+		.menu-toggle {
+			@include clearfix;
+			@include size(30px);
+			@include hide-text;
+			@include position(absolute, 0px 0px 0 0);
+
+			margin:15px 20px 15px 15px;
+			display: inline-block;
+
+			float: none;
+			text-align: left;
+
+			&:before {
+				content: '\e808';
+				font: normal #{30px}/#{30px} "Icons";
+				color: $text-color;
+				cursor: pointer;
+			}
+		}
+
+		.menu-collapse {
+			background-color: #fafafa;
+			z-index: 10;
+			position: absolute;
+			top: 60px;
+			width: 100%;
+			padding: 0 20px 20px 20px;
+
+			display: none;
+		}
+
+		.nav-menu {
+			@include span-columns(1);
+			display: block;
+			padding-bottom: 20px;
+			font-weight: 600;
+
+			a, span {
+				font-size: 22px;
+				color: $text-color;
+				text-align: right;
+				width: 100%;
+				padding: 10px 0;
+			}
+
+			.button {
+				display: inline-block;
+				margin-right: -10px;
+				a {
+					width: auto;
+					padding: 10px 2px;
+				}
+			}
+
+			.empty-menu-element {
+				display: none;
+			}
+
+			.menu-item-has-children {
+				ul:after {
+					content: '';
+
+					height: 10px;
+					width: 50%;
+					display: block;
+					border-bottom: 1px solid #bfbfbf;
+
+					float:right;
+				}
+
+				&:hover {
+					span { color: #bfbfbf; }
+				}
+			}
+
+
+			li {
+				display: block;
+				float: none;
+				text-align: right;
+
+
+				&:hover ul {
+					display: auto;
+				}
+
+				ul {
+					display: none;
+					position: static;
+					padding: 0;
+					box-shadow: none;
+
+				}
+
+				
+			}
+		}
+	}
+
 	}
 }

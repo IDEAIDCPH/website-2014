@@ -8,7 +8,6 @@
 
 @import "components/components";
 @import "elements/elements";
-@import "mobile";
 
 html, body {
 	width: 100%;
@@ -81,6 +80,7 @@ p {
 p.subheader {
 	margin-top: 0;
 }
+
 .sponsors {
 	overflow: hidden;
 }
@@ -88,3 +88,5 @@ p.subheader {
 .js-slider {
 	white-space: nowrap;
 }
+
+@import "mobile";
