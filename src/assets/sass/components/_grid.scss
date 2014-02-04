@@ -4,7 +4,10 @@ $outer-gutter: 30px;
 
 .grid-wrapper {
 	@include outer-container;
-	padding: 0 $outer-gutter;
+	padding: {
+		left: $outer-gutter;
+		right: $outer-gutter;
+	};
 }
 
 .row 			{ @include row; }
