@@ -77,20 +77,4 @@
 			}
 		}
 	}
-// 	input, textarea {
-// 		@each $type in text, email, url, tel {
-// 			&[type=#{$type}] {
-// 				//@extend .icon-#{$type};
-// 			}
-// 		}
-// 	}
-
-// 	label i.icon {
-// 		border-radius: 4px 0 0 4px;
-// 		display: inline-block;
-// 		width: 30px;
-// 		min-height: 100%;
-// 		background: #21202e;
-// 		display:none; //debug
-// 	}
 }
