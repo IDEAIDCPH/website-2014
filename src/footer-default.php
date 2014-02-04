@@ -1,14 +1,12 @@
 		<footer>
-			<!--<aside class="sponsors well center">
+			<aside class="sponsors well center">
 				<h1>Thanks to our sponsors</h1>
-				<ul class="inline-list js-slide">
+				<ul class="inline-list js-slider">
 					<?php foreach(get_sponsors() as $k => $post): setup_postdata($post);?>
-					<?php if(has_post_thumbnail()): ?>
 					<li><?php the_post_thumbnail('six-cols'); ?></li>
-					<?php endif; ?>
 					<?php endforeach; ?>
 				</ul>
-			</aside>-->
+			</aside>
 			<section class="social-media center">
 				<a href="http://fb.com/ideaidcph" class="icon" title="IDEAID on Facebook" style="text-decoration: none;">
                 	<img src="<?php echo get_template_directory_uri() ?>/img/facebook-icon@2x.png" alt="IDEAID on Facebook" width="48" height="48">
@@ -44,6 +42,7 @@
 		  ga('send', 'pageview');
 
 		</script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/0.6.10/fastclick.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/main.min.js"></script>
 	</body>
 </html>
