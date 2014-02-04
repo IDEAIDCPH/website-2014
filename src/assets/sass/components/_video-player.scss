@@ -8,6 +8,7 @@
 	&:before {
 		@include size(82px);
 		@include transition;
+		z-index:2;
 
 		position: absolute;
 		top: calc(50% - 41px);
@@ -21,11 +22,13 @@
 
 	&:hover:before {
 
-		background: rgba(#fff, 0.1);
+		background: rgba(#fff, 0.2);
 	}
 
 	iframe {
 		opacity: 0;
 		display: none;
+		position: relative;
+		z-index: 5;
 	}
 }
