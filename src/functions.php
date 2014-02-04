@@ -22,9 +22,7 @@ function get_default_template () {
 function get_sponsors () {
 	global $post;
 
-	$thispage = $post;
-
-	$result = new WP_Query('pagename=sponsor-list');
+	$result = new WP_Query('pagename=sponsors/sponsor-list');
 
 	$lookup = array(
 		'post_parent' => $result->post->ID,
