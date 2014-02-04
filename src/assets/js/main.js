@@ -5,6 +5,17 @@
                 scrollTop: $('.description').offset().top
             }, 500);
         });
+
+        $('.menu-toggle').click(function() {
+            $(this).next('.menu-collapse').toggle();
+        });
+
+        $('.menu-collapse span').click(function() {
+            $(this).next('ul').toggle();
+        });
+
+        $('.js-slider').infinitySlider();
+
         $('.video-player').click(function() {
             $(this)
               .find('iframe')
