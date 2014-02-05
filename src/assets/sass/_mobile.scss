@@ -10,12 +10,36 @@ $mobile: new-breakpoint(max-width $mobile-size 1);
 	.one-of-one 	{ @include span-columns(1); }
 	.one-of-two 	{ @include span-columns(1); }
 	.one-of-three 	{ @include span-columns(1); }
-	.one-of-six 	{ @include span-columns(1); }
+	.one-of-six 	{
+		@include span-columns(1 of 2);
+		@include omega(2n);
+	}
 
 	.description 	{ @include span-columns(1); }
 	.media-list {
 		.media-content { @include span-columns(1); }
-		.media { @include span-columns(1); text-align: center !important; }
+		.media {
+			@include span-columns(1);
+			@include omega;
+			text-align: center !important;
+		}
+	}
+
+	//frontpage
+	.home header + main {
+		margin-top: 140px;
+	}
+
+	//all other pages
+	main {
+		margin-top: 80px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
 	nav.dropdown {
 		box-shadow: 0 0 2px $dark-well-color;
 		position: relative;
@@ -137,7 +161,7 @@ $mobile: new-breakpoint(max-width $mobile-size 1);
 
 				}
 
-				
+
 			}
 		}
 	}
