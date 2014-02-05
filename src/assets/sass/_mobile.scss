@@ -166,5 +166,14 @@ $mobile: new-breakpoint(max-width $mobile-size 1);
 		}
 	}
 
+	.application-form {
+		label {
+			width: 100%;
+		}
+
+		input, textarea {
+			@include box-sizing(border-box);
+			max-width: 100%;
+		}
 	}
 }
